@@ -4,6 +4,9 @@ perl:
   - "5.8"
   - "5.26"
 install:
-  - "true"
+  - curl -sSL --compressed https://git.io/cpm | perl - install -g .
 script:
-  - cpanm -n --test-only .
+  - perl Makefile.PL
+  - make
+  - make test
+  - make install
