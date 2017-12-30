@@ -64,7 +64,7 @@
          "web" : "https://github.com/skaji/Alien-Libasyncns"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_alienfile" : {
       "generated_by" : "Dist::Zilla::Plugin::AlienBuild version 0.24",
       "requires" : {

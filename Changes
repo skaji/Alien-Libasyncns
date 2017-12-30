@@ -2,5 +2,9 @@ Revision history for Alien-Libasyncns
 
 {{$NEXT}}
 
+0.002  2017-12-30 18:22:20 JST
+    - For the time being, install shared library too;
+      libasyncns.pc does not contain -lresolv, so we cannot link to static library
+
 0.001  2017-12-30 17:16:12 JST
     - Initial release
