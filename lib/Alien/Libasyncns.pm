@@ -1,7 +1,7 @@
 package Alien::Libasyncns;
 use strict;
 use warnings;
-use base 'Alien::Base';
+use parent 'Alien::Base';
 
 our $VERSION = '0.001';
 

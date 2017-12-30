@@ -47,6 +47,7 @@
       "runtime" : {
          "requires" : {
             "Alien::Build" : "0.32",
+            "parent" : "0",
             "perl" : "5.008001"
          }
       }

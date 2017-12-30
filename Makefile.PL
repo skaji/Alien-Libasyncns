@@ -31,7 +31,8 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008001",
   "NAME" => "Alien::Libasyncns",
   "PREREQ_PM" => {
-    "Alien::Build" => "0.32"
+    "Alien::Build" => "0.32",
+    "parent" => 0
   },
   "VERSION" => "0.001",
   "test" => {
@@ -43,7 +44,8 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "Alien::Build" => "0.32",
   "Alien::Build::MM" => "0.32",
-  "ExtUtils::MakeMaker" => "6.52"
+  "ExtUtils::MakeMaker" => "6.52",
+  "parent" => 0
 );
 
 
