@@ -2,10 +2,9 @@ language: perl
 sudo: false
 perl:
   - "5.8"
-  - "5.10"
-  - "5.16"
   - "5.26"
-install:
-  - curl -sSL --compressed https://git.io/cpm | perl - install -g --with-develop
 script:
-  - prove -l t
+  - perl Makefile.PL
+  - make
+  - make test
+  - make install
