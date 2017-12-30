@@ -12,6 +12,19 @@ Alien::Libasyncns - Alien package for libasyncns
 
 Alien::Libasyncns is an Alien package for [libasyncns](http://0pointer.de/lennart/projects/libasyncns/).
 
+# HINTS
+
+- How do I install Net::LibAsyncNS linking Alien::Libasyncns?
+
+    First install Alien::Libasyncns:
+
+        cpanm -nq Alien::Libasyncns
+
+    Then install Net::LibAsyncNS with PKG\_CONFIG\_PATH set:
+
+        export PKG_CONFIG_PATH=`perl -MAlien::Libasyncns -e 'print Alien::Libasyncns->dist_dir'`/lib/pkgconfig
+        cpanm -nq Net::LibAsyncNS
+
 # SEE ALSO
 
 [http://0pointer.de/lennart/projects/libasyncns/](http://0pointer.de/lennart/projects/libasyncns/)
